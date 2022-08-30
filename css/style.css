@@ -1,0 +1,195 @@
+.passenger_main_container {
+width: 960px;
+background: #FFFFFF;
+border: 1px solid #C4C4C4;
+box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25);
+
+}
+
+.passenger_head_container {
+padding: 40px 20px 35px 23px;
+display: flex;
+align-items: center;
+background-color:#F9F9F9;
+}
+.passenger_img {
+   margin-right: 16px
+}
+.passenger_quantity {
+margin-right: 653px;
+font-weight: 400;
+font-size: 30px;
+line-height: 116%px;
+color: #292929;
+}
+ 
+  .passenger_list_container {
+   padding: 10px 55px 14px 13px;
+  }
+  .passenger_information_border_top {
+    border: 1px dashed #928F94;
+
+  }
+.passenger_information_container {
+display: flex;
+justify-content: space-between;
+margin: 40px 42px 28px 36px;
+}
+.passenger_information {
+
+}
+.passenger_information_body {
+    
+}
+.passenger_text {
+margin-bottom: 8px;
+font-weight: 400;
+font-size: 16px;
+color: #928F94;
+}
+.passenger_container {
+text-decoration: none;
+background: #FFFFFF;
+border: 1px solid #928F94;
+border-radius: 5px;
+}
+form {
+  width: 204px;
+  font-size: 30px;
+  font-weight: 900;
+  
+}
+input[type="radio"] {
+  display: none;
+  border-radius: 5px;
+  
+}
+input[type="radio"]:checked+label {
+  color: #000000;
+  background-image: linear-gradient(to bottom, 
+  #FFA800, #FFA800);
+}
+label[id="male"],
+label[id="female"] {
+  display: block;
+  float: left;
+  padding: 8px 5px 5px 36px;
+  font-family: 'Arial', sans-serif;
+  font-size: 14px;
+  background-image: linear-gradient(to bottom, #fff, 
+  #FFFFFF);
+  border: 1px solid #928F94;
+  cursor: pointer;
+}
+label[id="male"]:hover,
+label[id="female"]:hover {
+  background-image: linear-gradient(to bottom, #fff,
+  #FFA800);
+}
+.text-field__input {
+    display: block;
+    width: 240px;
+    height: 50px;
+    /*padding: 8px 5px 5px 36px;*/
+    
+    font-size: 18px;
+    font-weight: 400;
+    
+    color: #212529;
+    background-color: #fff;
+    
+    border: 1px solid #928F94;
+    border-radius: 5px;
+    
+  }
+  .passenger_information_data {
+      
+  }
+  body {
+    
+    
+    
+}
+
+.checkbox input[type="checkbox"] {
+    opacity: 0;
+}
+
+.checkbox label {
+    position: relative;
+    display: inline-block;
+    /*16px width of fake checkbox + 6px distance between fake checkbox and text*/
+    padding-left: 30px;
+    
+}
+
+.checkbox label::before,
+.checkbox label::after {
+    position: absolute;
+    content: "";
+    /*Needed for the line-height to take effect*/
+    display: inline-block;
+}
+
+/*Outer box of the fake checkbox*/
+.checkbox label::before{
+    height: 28px;
+    width: 28px;
+    border: 1px solid #928F94;
+    border-radius: 5px;
+    left: 0px;
+    
+    /*(24px line-height - 16px height of fake checkbox) / 2 - 1px for the border
+     *to vertically center it.
+     */
+    top: 3px;
+}
+
+/*Checkmark of the fake checkbox*/
+.checkbox label::after {
+    height: 5px;
+    width: 9px;
+    border-left: 2px solid;
+    border-bottom: 2px solid;
+    
+    transform: rotate(-45deg);
+    
+    left: 4px;
+    top: 7px;
+}
+
+/*Hide the checkmark by default*/
+.checkbox input[type="checkbox"] + label::after {
+    content: none;
+}
+
+/*Unhide on the checked state*/
+.checkbox input[type="checkbox"]:checked + label::after {
+    content: "";
+}
+.passenger_information_border {
+    border-bottom: 1px dashed #928F94;
+    margin-bottom: 37px;
+    margin-top: 33px;
+}
+.passenger_information_button {
+   margin: 39px 31px 28px 626px;
+   
+}
+a.button {
+    color: #292929; /* цвет текста */
+    font-size: 24px;
+    font-weight: 700;
+    text-decoration: none; /* убирать подчёркивание у ссылок */
+    user-select: none; /* убирать выделение текста */
+    background: #FFFFFF; /* фон кнопки */
+    padding: 12px 24px 11px 23px; /* отступ от текста */
+    outline: none; /* убирать контур в Mozilla */
+    border: 1px solid #292929;
+    border-radius: 5px;
+  } 
+  a.button:hover { background:  #FFA800; } /* при наведении курсора мышки */
+  a.button:active { background: #FFA800; } /* при нажатии */
+.submit {
+    
+}
