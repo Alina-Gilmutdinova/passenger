@@ -41,7 +41,7 @@ margin: 40px 42px 28px 36px;
 
 }
 .passenger_information_body {
-    
+   
 }
 input[type=text] {
   padding-left: 19px;
@@ -117,68 +117,59 @@ label[id="female"]:hover {
   .passenger_information_data {
       
   }
-  body {
-    
-    
-    
-}
-
-.checkbox input[type="checkbox"] {
-    opacity: 0;
-}
-
-.checkbox label {
-    position: relative;
-    display: inline-block;
-    /*16px width of fake checkbox + 6px distance between fake checkbox and text*/
-    padding-left: 30px;
-    
-}
-
-.checkbox label::before,
-.checkbox label::after {
+  
+  label {
+    position: relative; /* to contain absolute elements */
+    padding-left:30px; /* free space for custom checkbox */
+    cursor: pointer;
+  }
+  /* hide default checkbox  */
+  label input[type=checkbox] {
+    position: absolute; /* prevent taking any space */
+    /* cross-browser hidingg */
+    opactiy: 0;
+    width:0; 
+    height:0;
+  }
+  /* custom checkbox */
+  label span {
     position: absolute;
-    content: "";
-    /*Needed for the line-height to take effect*/
-    display: inline-block;
-}
-
-/*Outer box of the fake checkbox*/
-.checkbox label::before{
-    height: 28px;
-    width: 28px;
+    /* position to the free space in <label> */
+    top:0;
+    left:0;
+    width:28px; 
+    height:28px;
+    background-color: #FFFFFF;
     border: 1px solid #928F94;
     border-radius: 5px;
-    left: 0px;
-    
-    /*(24px line-height - 16px height of fake checkbox) / 2 - 1px for the border
-     *to vertically center it.
-     */
-    top: 3px;
-}
-
-/*Checkmark of the fake checkbox*/
-.checkbox label::after {
-    height: 5px;
-    width: 9px;
-    border-left: 2px solid;
-    border-bottom: 2px solid;
-    
-    transform: rotate(-45deg);
-    
-    left: 4px;
-    top: 7px;
-}
-
-/*Hide the checkmark by default*/
-.checkbox input[type="checkbox"] + label::after {
-    content: none;
-}
-
-/*Unhide on the checked state*/
-.checkbox input[type="checkbox"]:checked + label::after {
+    transition: .3s background-color; /* slight transition */
+  }
+  /* the check icon */
+  label span:after {
     content: "";
-}
+    position: absolute;
+    display: none;
+    
+    /* check icon */
+    left: 6px;
+    top: 2px;
+    width: 4px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    transform: rotate(45deg);
+  }
+  label:hover span {
+    background-color: #ccc;
+  }
+  
+  /**** Here's the trick ***/
+  label input:checked ~ span {
+    background-color: #FFA800;
+  }
+  label input:checked ~ span:after {
+    display:block;
+  }
 .passenger_information_border {
     border-bottom: 1px dashed #928F94;
     margin-bottom: 37px;
