@@ -10,7 +10,8 @@ rel="stylesheet" type="text/css" />
    <title>Сайт жд билетов</title>
 </head>
 <body>
-   <section class="passenger_main_container">
+   <section class="passenger_container">
+      <div class="passenger_main_container">
       <div class="passenger_head_container">
          <div class="passenger_img">
          <img src="img/minus.svg" alt="deployment">
@@ -97,6 +98,91 @@ rel="stylesheet" type="text/css" />
    <div class="passenger_information_border"></div>
    <div class="passenger_information_button">
       <a href="#" class="button">Следующий пассажир</a>
+</div>
+</div>
+   </section>
+   <section class="passenger_container">
+      <div class="passenger_main_container">
+      <div class="passenger_head_container">
+         <div class="passenger_img">
+         <img src="img/minus.svg" alt="deployment">
+      </div>
+         <div class="passenger_quantity">Пассажир 1</div>
+         <img src="img/Vector.svg" alt="close">
+      </div>
+      <div class="passenger_information_border_top"></div>
+      <div class="passenger_information_container">
+      <select name="passenger_list_container">
+         <option value="1">Взрослый</option>
+         <option value="2">Детский</option>
+       </select>
+      </div>
+     <div class="passenger_information_container">
+      <div class="passenger_information_type">
+         <div class="text-field">
+            <div class="passenger_text">Фамилия</div>
+            <input class="text-field__input" type="text" name="data" id="data" placeholder="">
+          </div>
+      </div>
+      <div class="passenger_information_type">
+         <div class="text-field">
+            <div class="passenger_text">Имя</div>
+            <input class="text-field__input" type="text" name="data" id="data" placeholder="">
+          </div>
+      </div>
+      <div class="passenger_information_type">
+         <div class="text-field">
+            <div class="passenger_text">Отчество</div>
+            <input class="text-field__input" type="text" name="data" id="data" placeholder="">
+          </div>
+      </div>
+
+     </div>
+     <div class="passenger_information_container">
+      <div class="passenger_information_body">
+         <div class="passenger_text">Пол</div>
+         <form action="">
+            <input type="radio" id="male" name="gender"/>
+            <label for="male" id="male">М</label>
+            <input type="radio" id="female"name="gender"/>
+            <label for="female" id="female">Ж</label>
+            </form>
+      
+      <div class="passenger_information_container">
+      <div class="passenger_information_data">
+         <div class="text-field">
+            <div class="passenger_text">Дата рождения</div>
+            <input class="text-field__input" type="text" name="data" id="data" placeholder="ДД/ММ/ГГ">
+          </div>
+         </div>
+      </div>
+     </div>
+   </div>
+     <div class="passenger_information_container">
+      <div class="checkbox">
+         <input type="checkbox" id="checkbox_1">
+         <label for="checkbox_1">ограниченная подвижность</label>
+     </div>
+   </div>
+   <div class="passenger_information_border"></div>
+   <div class="passenger_information_container">
+      <div class="passenger_information_document">
+      <div class="passenger_text">Тип документа</div>
+      <select name="passenger_list_container">
+         <option value="2">Свидетельство о рождении</option>
+       </select>
+      </div>
+      <div class="passenger_information_type">
+         <div class="text-field">
+            <div class="passenger_text">Номер</div>
+            <input class="text-field__input" type="text" name="data" id="data" placeholder="12 символов __ __ __ __ __ __">
+          </div>
+      </div>
+   </div>
+   <div class="passenger_information_border"></div>
+   <div class="passenger_information_button">
+      <a href="#" class="button">Следующий пассажир</a>
+</div>
 </div>
    </section>
 </body>
